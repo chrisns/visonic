@@ -87,6 +87,7 @@
                     "code": "Panel User Code",
                     "panel_serial": "Panel Serial ID (6 characters, leave blank for 1st panel)",
 					"scan_interval": "The period of time between polling the cloud server (seconds)",
+					"enable_keypad_alarm_entity": "Create Extra Alarm Panel Entities with Keypads",
                     "exclude_switch": "Appareils Switch \u00e0 exclure (s\u00e9par\u00e9s par des virgules e.g. 2,4,5,6)",
                     "exclude_sensor": "Liste de capteurs \u00e0 exclure (s\u00e9par\u00e9s par des virgules e.g. 2,3,4,5)"
                 }

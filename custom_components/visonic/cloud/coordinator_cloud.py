@@ -648,7 +648,7 @@ class VisonicCloudCoordinator(VisonicCoordinator):
             else:
                 timenow = get_utc_time()
                 # not less than 60 seconds, but allow 4 tries at updating before it's considered a timeout
-                timeout = min(60, 4.5 * self.update_interval)
+                timeout = min(60, 4.5 * self.update_interval.total_seconds())
                 if self.last_connected_timestamp is None or (timenow - self.last_connected_timestamp) >= timedelta(seconds=timeout):
                     connected = False
                     if (self.last_connected_timestamp is not None and
